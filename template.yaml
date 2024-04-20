@@ -1,0 +1,12 @@
+AWSTemplateFormatVersion: '2010-09-09'
+Transform: AWS::Serverless-2016-10-31
+Description: Amazon MQ for RabbitMQ Example
+
+Resources:
+  MQConsumer:
+    Type: AWS::Serverless::Function 
+    Properties:
+      CodeUri: .
+      Timeout: 30
+      Handler: index.handler
+      Runtime: nodejs14.x

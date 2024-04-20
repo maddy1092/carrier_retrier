@@ -1,0 +1,27 @@
+{
+  "name": "carrier",
+  "version": "1.0.0",
+  "description": "========================================== AWS carrierConsumeRabbitMQ lambda ==========================================",
+  "main": "index.js",
+  "type": "module",
+  "scripts": {
+    "index": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "@msgpack/msgpack": "^2.7.2",
+    "@opensearch-project/opensearch": "^1.0.2",
+    "@sentry/serverless": "^6.18.1",
+    "amqplib": "^0.8.0",
+    "aws-sdk": "^2.1085.0",
+    "axios": "^0.27.2",
+    "dotenv": "^16.0.0",
+    "json5": "^2.2.1",
+    "moment": "^2.29.3"
+  },
+  "devDependencies": {
+    "mocha": "^9.2.1",
+    "prettier": "2.5.1"
+  }
+}

@@ -1,0 +1,13 @@
+import 'dotenv/config'
+
+export const config = {
+  OPENSEARCH_INDEX_NAME: process.env.OPENSEARCH_INDEX_NAME || "payment",
+  OPENSEARCH_USERNAME: process.env.OPENSEARCH_USERNAME,
+  OPENSEARCH_PASSWORD: process.env.OPENSEARCH_PASSWORD,
+  OPENSEARCH_URL: process.env.OPENSEARCH_URL,
+  SENTRY_DSN: process.env.SENTRY_DSN,
+  RABBITMQ_URL: process.env.RABBITMQ_URL,
+  ON_AWS: !!process.env.LAMBDA_TASK_ROOT,
+  SENTRY_ENVIRONMENT: process.env.SENTRY_ENVIRONMENT,
+  CORE_BACKEND_ORIGIN: process.env.CORE_BACKEND_ORIGIN
+};
